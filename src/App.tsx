@@ -1,5 +1,6 @@
 import React from 'react';
 import FileConverter from './components/FileConverter';
+import DeveloperTag from './components/DeveloperTag';
 import { 
   Shield, Zap, Globe, Smartphone, Lock, CloudOff,
   FileText, Image, Music, Video, FileArchive, Wand2,
@@ -28,6 +29,9 @@ function App() {
 
   return (
     <div className="relative min-h-screen w-full bg-[#030014] overflow-x-hidden text-white font-sans selection:bg-purple-500/30 selection:text-white">
+       {/* Developer Tag */}
+      <DeveloperTag />
+
        {/* Ambient Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] animate-pulse"></div>
